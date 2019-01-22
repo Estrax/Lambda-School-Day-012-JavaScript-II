@@ -17,6 +17,23 @@ console.log(X());
 console.log(X());
 console.log(X());
 
+// challenge 1 with IIFE
+
+let X2 = (function(){
+  let x = 0;
+  function level2(){
+    let y = 0;
+    x++;
+    y++;
+    return `[x = ${x}, y = ${y}]`;
+  }
+  return level2;
+})();
+
+console.log(X2());
+console.log(X2());
+console.log(X2());
+
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
