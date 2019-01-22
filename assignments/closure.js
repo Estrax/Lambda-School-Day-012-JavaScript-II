@@ -45,7 +45,7 @@ const counterFactory = () => {
   
   let count = 0;
   return {
-    "increment": () => {count++; return count;},
+    "increment": () => {count++; return count},
     "decrement": () => {count--; return count}
   };
 };
